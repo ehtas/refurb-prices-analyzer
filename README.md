@@ -32,10 +32,9 @@ Track and compare prices of refurbished devices across multiple marketplaces.
    ```
 
 4. **Set up environment variables:**
-   Create a `.env` file with your OpenAI API key (optional):
-   ```
-   OPENAI_API_KEY=your_api_key_here
-   ```
+   No need to configure environment variables or secrets.
+   Rename config_template.py to config.py and add amazon your amazon api key
+   Create market.db in root folder 
 
 5. **Run the application:**
    ```bash
