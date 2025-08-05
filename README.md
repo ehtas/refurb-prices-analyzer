@@ -15,7 +15,7 @@ Track and compare prices of refurbished devices across multiple marketplaces.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ehtas/refurb-price-analyzer.git
+   git clone https://github.com/ehtas/refurb-prices-analyzer.git
    cd refurb-prices-analyzer
    ```
 
