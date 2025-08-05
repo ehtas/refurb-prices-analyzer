@@ -31,11 +31,12 @@ Track and compare prices of refurbished devices across multiple marketplaces.
    pip install -r requirements.txt
    ```
 
-4. **Set up environment variables:**
+4. **Configuration Instructions:**
 
-   -No need to configure environment variables or secrets.
-   -Rename config_template.py to config.py and add amazon your amazon api key
-   -Create market.db in root folder 
+- No need to configure environment variables or Streamlit secrets.
+- Rename `config_template.py` to `config.py` and add your Amazon API key to the `AMAZON_API_KEY` variable.
+- Create an empty SQLite database file named `market.db` in the root folder (same directory as `app.py`).
+
 
 6. **Run the application:**
    ```bash
