@@ -9,7 +9,6 @@ Track and compare prices of refurbished devices across multiple marketplaces.
 - Streamlit dashboard for data visualization
 - Price comparison with Maple Store
 - Best price suggestions
-- Scheduled daily scraping
 
 ## Setup
 
