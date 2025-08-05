@@ -2,7 +2,7 @@ import re
 import requests
 from .base_scraper import BaseScraper
 from utils.normalization import normalize_brand, normalize_condition, extract_model
-from config import AMAZON_API_KEY  # your key from config.py
+from config import AMAZON_API_KEY
 
 class AmazonRenewedScraper(BaseScraper):
     def __init__(self):

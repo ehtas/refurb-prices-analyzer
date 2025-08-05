@@ -1,4 +1,41 @@
 import streamlit as st
+import os
+
+# Dynamically create config.py from secrets
+if not os.path.exists("config.py"):
+    with open("config.py", "w") as f:
+        f.write(f"""
+DATABASE_URL = "{st.secrets['database']['url']}"
+
+SCRAPER_CONFIG = {{
+    "cashify": {{
+        "base_url": "{st.secrets['urls']['cashify']}"
+    }},
+    "refitGlobal": {{
+        "base_url": "{st.secrets['urls']['refit']}"
+    }},
+    "mobilegoo": {{
+        "base_url": "{st.secrets['urls']['mobilegoo']}"
+    }},
+    "flipkart": {{
+        "base_url": "{st.secrets['urls']['flipkart']}"
+    }},
+    "quikr": {{
+        "base_url": "{st.secrets['urls']['quikr']}"
+    }},
+    "maple": {{
+        "base_url": "{st.secrets['urls']['maple']}"
+    }}
+}}
+
+USERS = {{
+    "admin": "{st.secrets['users']['admin']}",
+    "user": "{st.secrets['users']['user']}"
+}}
+
+AMAZON_API_KEY = "{st.secrets['amazon']['api_key']}"
+""")
+
 from database import operations as db_ops
 from scraper.cashify import CashifyScraper
 from scraper.maple import MapleScraper
